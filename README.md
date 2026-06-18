@@ -1,7 +1,6 @@
 # EV Fleet Electrification & Solar Sizing Engine (Axiom Core)
 
 [![RapidAPI Core Gateway](https://img.shields.io/badge/Production_Hub-RapidAPI_Gateway-0055DA?style=for-the-badge&logo=rapid&logoColor=white)](https://rapidapi.com/bethelnedi/api/ev-fleet-electrification-solar-sizing-api)
-[![OpenAPI Interactive Docs](https://img.shields.io/badge/Live%20Docs-Hugging%20Face_Sandbox-7c3aed?style=for-the-badge&logo=huggingface&logoColor=white)](https://amfumu-ev-fleet-api.hf.space/docs)
 [![Compliance Framework](https://img.shields.io/badge/Compliance-SAE_||_NREL_||_IRS_Audited-0f766e?style=for-the-badge&logo=statuspage&logoColor=white)](#the-methodology-and-governing-standards)
 
 The definitive, low-latency computational engine for end-to-end commercial fleet electrification, co-located grid-capacity loading, and behind-the-meter solar sizing. Developed by **Axiom Infrastructure Intelligence LLP**, this engine bridges the gap between vehicle kinematics, building envelope logistics, utility demand tariffs, and institutional capital underwriting.
@@ -99,14 +98,30 @@ The underlying core engine checks asset calculations against an EPA-validated ve
 
 ---
 
-## ⚙️ Technical Specifications & API Interface
+## ⚙️ Technical Specifications & Interactive Sandbox Tool
 
-### Endpoint Directory
+This repository provides an automated sandbox configuration. You can test payload queries directly or interface programmatically using our live interactive engine interfaces:
+
+### 🎛️ Interactive API Explorer
+
+Test input variables, review object properties, and perform real-time requests using the embedded Swagger/OpenAPI execution sandbox built directly over the code repository:
+
+* **Launch Interactive Interface:** [amfumu-ev-fleet-api.hf.space](https://www.google.com/search?q=https://amfumu-ev-fleet-api.hf.space)
+* **Download Raw OpenAPI JSON Specification:** [openapi.json](https://raw.githubusercontent.com/bethelhash/EV-Fleet-Electrification-Solar-Sizing-API/refs/heads/main/openapi.json)
+
+### Engine Core Endpoints
 
 * **`POST /fleet/quick`** — Fast feasibility screening pipeline. Requires minimal site parameters; relies on regional baseline models.
 * **`POST /fleet/full`** — Comprehensive end-to-end physics and financial simulation payload. Connects directly to the co-located solar yield design engine.
 * **`GET /reference/methodology`** — Returns full transparent trace mathematical equations, environmental constraints, and underlying source records.
-* **Utility Metadata Directory Services:** `GET /reference/vehicles` | `GET /reference/chargers` | `GET /reference/demand-rates` | `GET /reference/climate-zones` | `GET /reference/incentives`
+
+#### Live Reference Dictionaries (All Plans)
+
+* **Vehicles Payload:** `GET /reference/vehicles`
+* **Chargers Payload:** `GET /reference/chargers`
+* **Demand Rates Payload:** `GET /reference/demand-rates`
+* **Climate Zones Payload:** `GET /reference/climate-zones`
+* **Incentives Map Payload:** `GET /reference/incentives`
 
 ---
 
@@ -124,7 +139,7 @@ The underlying core engine checks asset calculations against an EPA-validated ve
 
 All core engineering modules, structural load configurations, mathematical calculation frameworks, API endpoints, and OpenAPI data schemas compiled within this repository represent the exclusive proprietary intellectual property of **Axiom Infrastructure Intelligence LLP** (Registered LLP, United Kingdom).
 
-Public API consumption is provisioned through verified authentication layers. Custom multi-asset portfolio assessments, bespoke municipal compliance configurations, white-label engine setups, and formal enterprise SLAs are managed directly by our structural engineering division.
+Public API consumption is provisioned exclusively through verified validation layers via RapidAPI. Custom multi-asset portfolio assessments, beige-label engine setups, corporate white-label instances, and formal enterprise SLAs are managed directly by our structural engineering division.
 
 ---
 
@@ -138,7 +153,7 @@ Public API consumption is provisioned through verified authentication layers. Cu
 
 * **Production Marketplace Gateway:** [rapidapi.com/user/bethelnedi](https://rapidapi.com/user/bethelnedi)
 * **Corporate Engineering Support:** corporate@axiomii.co.uk
-* **Infrastructure Operations Gateway:** [axiomii.co.uk](https://www.google.com/search?q=https://axiomii.co.uk)
+* **Core Application Sandbox Support:** support@solartruth.app
 
 ```
 
