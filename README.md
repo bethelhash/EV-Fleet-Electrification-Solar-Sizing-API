@@ -1,159 +1,177 @@
-# EV Fleet Electrification & Solar Sizing Engine (Axiom Core)
+# <p align="center"><img src="https://raw.githubusercontent.com/bethelhash/EV-Fleet-Electrification-Solar-Sizing-API/refs/heads/main/engine_architecture_pipeline.png" width="100%" alt="Axiom Infrastructure Intelligence Engine Core Header"></p>
 
-[![RapidAPI Core Gateway](https://img.shields.io/badge/Production_Hub-RapidAPI_Gateway-0055DA?style=for-the-badge&logo=rapid&logoColor=white)](https://rapidapi.com/bethelnedi/api/ev-fleet-electrification-solar-sizing-api)
-[![Compliance Framework](https://img.shields.io/badge/Compliance-SAE_||_NREL_||_IRS_Audited-0f766e?style=for-the-badge&logo=statuspage&logoColor=white)](#the-methodology-and-governing-standards)
+<div align="center">
 
-The definitive, low-latency computational engine for end-to-end commercial fleet electrification, co-located grid-capacity loading, and behind-the-meter solar sizing. Developed by **Axiom Infrastructure Intelligence LLP**, this engine bridges the gap between vehicle kinematics, building envelope logistics, utility demand tariffs, and institutional capital underwriting.
+  <p><strong>The Only Lender-Grade EV Fleet Electrification + Co-Located Solar Optimization Engine Purpose-Built for Commercial Property & Logistics Underwriting</strong></p>
+
+</div>
+
+<div align="center">
+
+  <a href="https://rapidapi.com/bethelnedi/api/ev-fleet-electrification-solar-sizing-api"><img src="https://img.shields.io/badge/Production_Gateway-RapidAPI-blue?style=for-the-badge&logo=rapid&logoColor=white" alt="RapidAPI Integration Hub"></a>
+  <a href="https://elements.stoplight.io/viewer/?spec=https://raw.githubusercontent.com/bethelhash/EV-Fleet-Electrification-Solar-Sizing-API/refs/heads/main/openapi.json"><img src="https://img.shields.io/badge/Interactive_Docs-Stoplight_Elements-7c3aed?style=for-the-badge&logo=openapi&logoColor=white" alt="Interactive OpenAPI Documentation Viewer"></a>
+  <img src="https://img.shields.io/badge/System_Status-Operational-10b981?style=for-the-badge&logo=statuspage&logoColor=white" alt="Status">
+  <img src="https://img.shields.io/badge/Engine_Version-v3.0.0_Stable-7c3aed?style=for-the-badge&logo=semver&logoColor=white" alt="Version">
+  <img src="https://img.shields.io/badge/API_Latency-%3C500ms-0284c7?style=for-the-badge&logo=fastapi&logoColor=white" alt="Latency">
+
+</div>
 
 ---
 
-## ⚡ Computational Philosophy & System Overview
+## ⚡ Executive Summary
 
-While standard fleet evaluation software provides basic range estimations, it fails to evaluate the grid impact, thermal boundaries, and structural financial shocks of deploying massive physical electrical loads. Commercial fleet charging transitions present complex structural engineering problems: infusing massive recurring power loads into an asset base can destabilize local power distribution networks, trigger catastrophic spikes in peak facility demand charges, and force premature structural CAPEX overhauls.
+The **EV Fleet Electrification & Solar Sizing API (Axiom Core)** replaces highly subjective corporate spreadsheets with standard-aligned, deterministic computational models used by fleet operators, logistics companies, commercial property developers, and institutional underwriters.
 
-This API eliminates spreadsheet uncertainty. By passing a fleet configuration parameter array to a single programmatic endpoint, it processes multi-variable fluid demand profiles, local net-billing tariff rules, cross-border fiscal structures, and localized solar envelope physics to output a complete project underwriting data structure in **under 500ms**.
+By executing high-fidelity vehicle kinematic loading models against multi-tier utility dynamic tariff matrices and behind-the-meter solar envelope physics, the engine delivers comprehensive asset sizing profiles, carbon mitigation parameters, and project financing cash-flow payload matrices in **under 500ms**.
+
+<blockquote align="left">
+
+  <strong>💎 INSTITUTIONAL UNDERWRITING RIGOR</strong><br>
+
+  Engine frameworks are designed to generate investment summaries, cash flows, and debt compliance matrices structured specifically to pass strict institutional risk and credit gates. All parameters trace back to verified statutory references (IRA 2022, Workplace Charging Scheme) and validated empirical databases (NREL, OpenEI, NASA) to completely eliminate black-box computational risks.
+
+</blockquote>
 
 ---
 
-## 🏛️ Core Computational Pipeline Architecture
+## 🏛️ Enterprise Core Capabilities
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📈 Advanced Infrastructure Underwriting</h3>
+      <ul>
+        <li><strong>Asset Cash-Flow Projections:</strong> Compiles complete ASTM-aligned 10-year project underwriting schedules including internal rate of return (IRR), net present value (NPV), and levelized cost of energy (LCOE).</li>
+        <li><strong>Sovereign Fiscal Optimization:</strong> Automatically maps tax equity layers, including US Inflation Reduction Act (IRA) §30C, §45W, and §48E structures along with UK Workplace Charging allowances.</li>
+        <li><strong>Grid Capacity Stress-Testing:</strong> Simulates multi-vehicle overlapping simultaneous charging patterns to isolate demand spikes and evaluate peak utility tariff impacts.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔌 Rigorous Vehicle Kinematics &amp; Physics</h3>
+      <ul>
+        <li><strong>Multi-Class Kinematic Matching:</strong> Processes baseline efficiencies across light, medium, and heavy-duty vehicles (e.g., E-Transit, F-150 Lightning, eCascadia) alongside custom user-defined parameter matrices.</li>
+        <li><strong>BTM Solar Balancing:</strong> Computes high-fidelity roof or ground-mount photovoltaic capacity factors required to structurally offset newly injected EV fleet facility loads.</li>
+        <li><strong>SAE Standard Charger Profiling:</strong> Integrates specific load curves across SAE J1772 AC Interfaces (Level 1 to 19.2 kW AC), DC Fast Chargers (50–350 kW DC), and Megawatt Charging Systems (MCS).</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🗺️ Market Architecture Hub
+
+### 🌍 Localized Sovereign Jurisdictions
+The execution matrix dynamically incorporates country-specific utility baseline structures, local corporate depreciation incentives, environmental frameworks, and tax credits across:
+`United States` &middot; `United Kingdom` &middot; `Australia` &middot; `India` &middot; `South Africa` &middot; `Singapore`
+
+### 📊 Validated Fleet Classifications
+Vehicle load profiles and statutory credit mappings are automatically validated across a robust asset catalog:
+`Light Duty Van` &middot; `Medium Duty Van` &middot; `Light Duty Pickup` &middot; `Medium Duty Truck` &middot; `Class 8 Heavy Duty` &middot; `Custom Vehicle Array`
+
+---
+
+## 📂 API Core Endpoint Directory
 
 ```mermaid
-graph TD
-  A[Inbound Vehicle Kinematics Array] --> B(Fleet Charging Load Engine)
-  B --> C(SAE J1772 Peak Demand Matrix)
-  C --> D(OpenEI Dynamic Utility Tariff Engine)
-  D --> E(Behind-The-Meter Solar Co-Location Optimizer)
-  E --> F(Statutory Incentives & Tax Equity Module)
-  F --> G(ASTM E917 10-Yr Investment Cashflow Payload)
+graph LR
+  A[API Request Gateway] --> B(🌐 System Layer)
+  A --> C(📊 Sizing Engine)
+  A --> D(🔍 Reference Matrices)
 
-  style B fill:#7c3aed,stroke:#fff,stroke-width:1px,color:#fff
+  style A fill:#7c3aed,stroke:#fff,stroke-width:2px,color:#fff
   style C fill:#0284c7,stroke:#fff,stroke-width:1px,color:#fff
   style D fill:#0f766e,stroke:#fff,stroke-width:1px,color:#fff
-  style E fill:#0055DA,stroke:#fff,stroke-width:1px,color:#fff
 
 ```
 
-### Key API Pain Points Solved
+---
 
-* **Elimination of Excel Debt:** Replaces highly subjective, error-prone corporate spreadsheets with standard-aligned, deterministic mathematical models.
-* **Underwriting Rigor:** Generates cash-flow summaries, investment profiles, and asset payback schedules structured specifically to pass strict institutional risk and credit gates.
-* **Traceable Verification:** Every computed parameter points back to verified statutory text or experimental laboratory datasets via a comprehensive citation register.
+### 🌐 System Layer
+
+* `GET /health` — Returns engine operational uptime status, cloud proxy status, and version matrices.
+* `GET /pricing` — Exposes active subscription tier quotas, programmatic rate latency caps, and overage billing parameters.
+
+### 📊 Sizing Engine
+
+* `POST /fleet/quick` — Fast feasibility screening pipeline. Utilizes minimal input parameters and regional macro assumptions to generate initial payback, consumption baselines, and tax equity snapshots.
+* `POST /fleet/full` — Institutional underwriting ledger. Unlocks complete multi-variable fluid asset load analysis, co-located solar optimization balancing, 10-year cash-flow payloads, and regulatory reference maps.
+
+### 🔍 Reference Matrices (JSON Ingestion Loops)
+
+* `GET /reference/vehicles` — Pulls the EPA-validated vehicle registry containing kinematic metrics, efficiency constants ($\text{mi}/\text{kWh}$), and statutory credit allocations.
+* `GET /reference/chargers` — Exposes active standard charging profiles matching SAE J1772 and MCS megawatt container coupling configurations.
+* `GET /reference/demand-rates` — Direct endpoint stream for dynamic step-change peak utility rate profiles and regional tariff tracking.
+* `GET /reference/climate-zones` — Resolves spatial solar performance factors using historical NASA POWER MERRA-2 meteorological database points.
+* `GET /reference/incentives` — Generates a compliance matrix mapping regional grant caps, tax equity rules, and demographic bonus criteria.
+* `GET /reference/methodology` — Exposes the transparent mathematical equations and verification records behind the core engine calculations.
 
 ---
 
-## 🛠️ Complete Programmatic Execution Matrix
+## 📈 Engineering Methodology & Verification Matrix
 
-A single call to `POST /fleet/full` calculates and returns **7 complete data sections** along with a transparent reference metadata array:
+Every block within the engine is fully traceable and eliminates black-box computing risks by tracking directly to global standards:
 
-| Output Payload Structure | Computational Execution | Governing Standards & Foundations |
+| Functional Block | Governing Code / Standard | Enterprise Technical Execution |
 | --- | --- | --- |
-| **Annual Fleet Energy Load** | Calculates the cumulative system charging consumption baseline ($\text{kWh}/\text{yr}$). | **NREL EVI-Pro 2023**; **DOE AFDC 2024** |
-| **Co-Located Peak Facility Demand** | Models simultaneous charging event overlaps to determine structural grid loading additions ($\text{kW}$). | **SAE J1772:2023**; Fleet Duty-Cycle Curves |
-| **Utility Demand Charge Volatility** | Maps dynamic step-change peak facility demand increases against seasonal utility tariff rules. | **OpenEI Utility Rate Database 2024** |
-| **EVSE Structural Asset Sizing** | Computes localized per-unit component hardware procurement and mechanical installation costs. | **NREL/TP-7A40-87610**; **BloombergNEF 2024** |
-| **Sovereign Tax Credit Stack** | Models base tax equity allocations alongside geometric demographic adder requirements. | **IRA 2022 §30C, §45W**; **IRS Notices 2023-29/2023-38** |
-| **On-Site Photovoltaic Balancing** | Resolves high-fidelity roof yield capabilities required to structurally offset newly added fleet grid loads. | **NREL PVWatts V8**; **NASA POWER MERRA-2 Grid** |
-| **Solar Tax Equity Optimization** | Layers base solar investment credits with regional structural, community, and domestic content adders. | **IRA 2022 §48E**; NREL Renewable CAPEX Models |
-
-* **Additional Compiled Outputs:** Integrated managed-charging grid optimization models, 10-year investment cash-flow summaries (NPV, IRR, LCOE via Newton-Raphson), Scope 1 carbon emission offsets, and full regulatory citation maps.
+| **Fleet Energy Consumption** | NREL EVI-Pro / DOE AFDC | Models cumulative annual system consumption baselines ($\text{kWh}/\text{yr}$). |
+| **Co-Located Peak Loading** | SAE J1772:2023 Guidelines | Calculates simultaneous vehicle charging overlaps to locate structural facility grid loads ($\text{kW}$). |
+| **Utility Tariff Mapping** | OpenEI Utility Rate Database | Traces dynamic changes in seasonal demand structures and peak step-up tariff thresholds. |
+| **Photovoltaic Sizing** | NREL PVWatts V8 Engine | Resolves geometric solar envelope outputs to match newly added utility load vectors. |
+| **Tax Equity Allocation** | US IRA 2022 (§30C, §45W, §48E) | Automates federal corporate tax balancing, depreciation write-offs, and demographic adders. |
+| **Financial Engineering** | ASTM E917 Standard Practice | Computes 10-year project finance indicators (NPV, IRR, LCOE) via a Newton-Raphson loop. |
 
 ---
 
-## 🌍 Global Sovereign Jurisdictional Compliance
+## 🚀 Quickstart Integration Example (Python)
 
-* **🇺🇸 United States:** Full 50-state utility data validation using OpenEI utility records. Automates federal corporate tax optimization under **IRA 2022 §30C** (Alternative Fuel Vehicle Refueling Property), **§45W** (Commercial Clean Vehicle Credit), and **§48E** (Clean Electricity Investment Tax Credit).
-* **🇬🇧 United Kingdom:** Maps localized Workplace Charging Scheme (WCS) parameters (covering 75% of physical socket installation caps up to £350 per outlet) combined with Enhanced Capital Allowances (100% first-year capital depreciation structures for zero-emission corporate vehicle classes).
-* **🇦🇺 Australia:** Implements ARENA and Clean Energy Finance Corporation (CEFC) commercial electrification framework benchmarks alongside federal Fringe Benefits Tax (FBT) exemptions for qualifying low-emission fleets.
-* **🇮🇳 India:** Evaluates regional multi-tier Faster Adoption and Manufacturing of Electric Vehicles (FAME II) commercial subsidies ($\text{₹}10,000\text{--}\text{₹}50,000/\text{kWh}$ across commercial categories).
-* **🇿🇦 South Africa & 🇸🇬 Singapore:** Models sovereign industrial peak demand charge structures, localized carbon offset allowances, and regional clean energy development incentives.
+To programmatically run an optimization pass through the enterprise infrastructure gateway, run the configuration script below:
 
----
+```python
+import json
+import requests
 
-## 📊 Standard Vehicle Kinematics Core Data
+# Core Routing Configuration via RapidAPI Gateway
+GATEWAY_URL = "[https://ev-fleet-electrification-solar-sizing-api.p.rapidapi.com/fleet/quick](https://ev-fleet-electrification-solar-sizing-api.p.rapidapi.com/fleet/quick)"
 
-The underlying core engine checks asset calculations against an EPA-validated vehicle database:
+payload = {
+    "country": "united_states",
+    "vehicle_class_index": "ford_e_transit_cargo",
+    "fleet_size": 25,
+    "avg_daily_miles_per_vehicle": 85,
+    "charger_type_interface": "level_2_high_output",
+    "solar_co_location_target_pct": 50,
+    "utility_rate_id": "us_commercial_baseline"
+}
 
-| Vehicle Class Index | Structural Category | Kinematic Efficiency ($\text{mi}/\text{kWh}$) | Statutory §45W Credit Allocation |
-| --- | --- | --- | --- |
-| **Ford E-Transit Cargo** | Light Duty Van | 2.00 | $7,500 Full Credit |
-| **Ford E-Transit 350 HD** | Medium Duty Van | 1.60 | $40,000 Full Credit |
-| **Ford F-150 Lightning Fleet** | Light Duty Pickup | 2.30 | $7,500 Full Credit |
-| **Rivian R1T Fleet** | Light Duty Pickup | 2.30 | $7,500 Full Credit |
-| **Workhorse C-1000** | Medium Duty Van | 1.25 | $40,000 Full Credit |
-| **Lightning eMotors ZEV3** | Medium Duty Truck | 1.25 | $40,000 Full Credit |
-| **Freightliner eCascadia** | Class 8 Heavy Duty | 0.50 | $40,000 Full Credit |
-| **Lion8 Electric Truck** | Class 8 Heavy Duty | 0.52 | $40,000 Full Credit |
-| **`Custom`** | User-Defined Array | *Dynamic Input* | *Dynamic Ingestion Loop* |
+headers = {
+    "Content-Type": "application/json",
+    "X-RapidAPI-Key": "YOUR_SECURE_MARKETPLACE_TOKEN",
+    "X-RapidAPI-Host": "ev-fleet-electrification-solar-sizing-api.p.rapidapi.com"
+}
 
-*Source Reference: EPA fuel-economy register (fueleconomy.gov); manufacturer fleet performance catalogues.*
+response = requests.post(GATEWAY_URL, json=payload, headers=headers)
+data = response.json()
 
-### Supported Charger Infrastructure (SAE J1772:2023)
+print(json.dumps(data["summary"], indent=2))
 
-* **Level 1 Charging Interfaces:** 1.4 kW AC
-* **Level 2 Standard Core:** 7.2 kW AC
-* **Level 2 High Output:** 11.5 kW AC
-* **Level 2 Maximum Outflow:** 19.2 kW AC
-* **DC Fast Charging Systems (DCFC):** 50 kW / 150 kW / 350 kW DC
-* **Megawatt Charging Systems (MCS):** 500 kW Heavy Duty Container Coupling
+```
 
 ---
 
-## ⚙️ Technical Specifications & Interactive Sandbox Tool
+## 🔒 Proprietary License & Terms
 
-This repository provides an automated sandbox configuration. You can test payload queries directly or interface programmatically using our live interactive engine interfaces:
+### Intellectual Property Protection
 
-### 🎛️ Interactive API Explorer
+**Copyright © 2026 Axiom Infrastructure Intelligence LLP. All rights reserved.**
 
-Test input variables, review object properties, and perform real-time requests using the embedded Swagger/OpenAPI execution sandbox built directly over the code repository:
+The EV Fleet Electrification & Solar Sizing Engine API, its underlying vehicle kinematic calculation matrices, structural financial modeling loops, OpenAPI directories, interface configurations, and data assets are the exclusive proprietary intellectual property of Axiom Infrastructure Intelligence LLP (Registered LLP, United Kingdom).
 
-* **Launch Interactive Interface:** [amfumu-ev-fleet-api.hf.space](https://www.google.com/search?q=https://amfumu-ev-fleet-api.hf.space)
-* **Download Raw OpenAPI JSON Specification:** [openapi.json](https://raw.githubusercontent.com/bethelhash/EV-Fleet-Electrification-Solar-Sizing-API/refs/heads/main/openapi.json)
+No part of this system design, endpoint route hierarchy, code segment, or parameter schema may be reproduced, modified, white-labeled, or reverse-engineered without an active Master Services Agreement (MSA) and express written licensing permission from the corporate rights holder.
 
-### Engine Core Endpoints
+### Technical Disclaimer
 
-* **`POST /fleet/quick`** — Fast feasibility screening pipeline. Requires minimal site parameters; relies on regional baseline models.
-* **`POST /fleet/full`** — Comprehensive end-to-end physics and financial simulation payload. Connects directly to the co-located solar yield design engine.
-* **`GET /reference/methodology`** — Returns full transparent trace mathematical equations, environmental constraints, and underlying source records.
-
-#### Live Reference Dictionaries (All Plans)
-
-* **Vehicles Payload:** `GET /reference/vehicles`
-* **Chargers Payload:** `GET /reference/chargers`
-* **Demand Rates Payload:** `GET /reference/demand-rates`
-* **Climate Zones Payload:** `GET /reference/climate-zones`
-* **Incentives Map Payload:** `GET /reference/incentives`
-
----
-
-## 💎 Production Subscriptions (RapidAPI)
-
-| Tier Classification | Monthly Access Fees | Active Rate Latency Caps | Inclusive Data Volume Quota | Programmatic Endpoint Access | Support Service Level |
-| --- | --- | --- | --- | --- | --- |
-| **Free Tier Core** | $0 / Month | 5 Requests / Minute | 50 Calls / Month | `/fleet/quick` + Reference Suite | Open Community Forum |
-| **Pro Enterprise** | $79 / Month | 1,000 Requests / Hour | Unlimited | Complete Ecosystem Access | Standard Service SLA |
-| **Ultra Institutional** | $249 / Month | Uncapped Execution | Unlimited | Full Access + Custom Payloads | Dedicated Engineer Operations |
-
----
-
-## 🔒 Corporate Charter & Intellectual Property Rights
-
-All core engineering modules, structural load configurations, mathematical calculation frameworks, API endpoints, and OpenAPI data schemas compiled within this repository represent the exclusive proprietary intellectual property of **Axiom Infrastructure Intelligence LLP** (Registered LLP, United Kingdom).
-
-Public API consumption is provisioned exclusively through verified validation layers via RapidAPI. Custom multi-asset portfolio assessments, beige-label engine setups, corporate white-label instances, and formal enterprise SLAs are managed directly by our structural engineering division.
-
----
-
-## 📌 Technical Domain Metadata Indexation
-
-`ev-fleet-electrification` `solar-sizing-api` `grid-peak-demand` `sae-j1772` `nrel-evi-pro` `utility-demand-charges` `openei-rate-database` `ira-30c` `ira-45w` `solar-co-location` `project-finance-underwriting` `deterministic-energy-math` `fastapi-microservices` `axiom-infrastructure`
-
----
-
-## 📬 Institutional Interface
-
-* **Production Marketplace Gateway:** [rapidapi.com/user/bethelnedi](https://rapidapi.com/user/bethelnedi)
-* **Corporate Engineering Support:** corporate@axiomii.co.uk
-* **Core Application Sandbox Support:** support@solartruth.app
+All outputs generated by the simulation core serve as pre-feasibility infrastructure screens for top-of-funnel scoping. Asset owners must consult with a licensed professional electrical engineer (bound to local codes) and a certified financial advisor before final hardware procurement or infrastructure investment.
 
 ```
 
